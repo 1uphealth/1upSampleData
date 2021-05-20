@@ -8,3 +8,7 @@ a well named directory.  The data can be JSON bundles or ndjson files.
 
 * uscore - a collection of individual patient bundles with resources (500-2000
   in each patient bundle) that comply with USCDI profiles.
+
+* carin - a collection of 6 individual patient bundles with resources (200-400
+  in each patient bundle) that comply with CARIN Blue Button ID profiles.
+
