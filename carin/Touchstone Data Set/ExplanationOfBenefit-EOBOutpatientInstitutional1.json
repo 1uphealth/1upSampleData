@@ -48,7 +48,20 @@
       },
       "system": "https://www.xxxplan.com/fhir/EOBIdentifier",
       "value": "AW123412341234123412341234123412"
-    }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+            "code": "uc"
+          }
+        ]
+      },      
+      "value": "EOBOutpatientInstitutional1",
+      "use": "usual",
+      "system": "https://api.networkhealthfhir.com/r4"
+  }    
   ],
   "status": "active",
   "type": {
@@ -62,7 +75,7 @@
   },
   "use": "claim",
   "patient": {
-    "reference": "Patient/Patient1"
+    "reference": "Patient/ExamplePatient1"
   },
   "billablePeriod": {
     "start": "2019-01-01",
