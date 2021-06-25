@@ -146,6 +146,6 @@
     }
   ],
   "partOf": {
-    "reference": "Location/StateOfCTLocation"
+    "reference": "Location/ExampleLocation"
   }
 }
