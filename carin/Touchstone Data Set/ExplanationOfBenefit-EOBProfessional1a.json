@@ -78,8 +78,8 @@
     "reference": "Patient/ExamplePatient1"
   },
   "billablePeriod": {
-    "start": "2019-01-01",
-    "end": "2019-10-31"
+    "start": "2019-10-30",
+    "end": "2019-10-30"
   },
   "created": "2019-07-02T00:00:00+00:00",
   "insurer": {
@@ -164,7 +164,7 @@
         "coding": [
           {
             "system": "http://hl7.org/fhir/sid/icd-10-cm",
-            "code": "S06.0x1A"
+            "code": "Z96.653"
           }
         ]
       },
