@@ -837,10 +837,6 @@
                         "system": "https://api.gainwellfhirdemo.com/r4"
                     }
                 ],
-                "meta": {
-                    "lastUpdated": "2021-07-21T21:02:59.639Z",
-                    "versionId": "9000000000000"
-                },
                 "status": "final",
                 "interpretation": [
                     {
@@ -970,7 +966,7 @@
                         }
                     ],
                     "encounter": {
-                        "reference": "Encounter/XIWpuJYG6TC6Q0xSETQxEqiEyLSFJxf4EVski0x1up"
+                        "display": "GP Visit"
                     },
                     "resourceType": "Immunization"
                 }
@@ -1021,7 +1017,7 @@
                       },
                       "occurrenceDateTime": "2021-02-18",
                       "encounter": {
-                          "reference": "Encounter/XIWpuJYG6TC6Q0xSETQxEqiEyLSFJxf4EVski0x1up"
+                          "display": "GP Visit"
                       },
                       "resourceType": "Immunization"
                   }
@@ -1435,7 +1431,7 @@
                             }
                         ],
                         "encounter": {
-                            "reference": "Encounter/XIWpuJYG6TC6Q0xSETQxEqiEyLSFJxf4EVski0x1up"
+                            "display": "GP Visit"
                         },
                         "resourceType": "Immunization",
                         "reasonCode": [
@@ -3236,6 +3232,682 @@
                                       "text": "Claim Type Codes"
                                   }
                               }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "resolved"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-01-07T17:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "4b7135e8-6db4-fa92-6b2e-188feb3916c7",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-01-07T17:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "195662009",
+                                                "display": "Acute viral pharyngitis (disorder)"
+                                            }
+                                        ],
+                                        "text": "Acute viral pharyngitis (disorder)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "abatementDateTime": "2011-01-16T02:19:15.000Z",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-1"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "resolved"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-02-11T12:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "1b2c634d-570c-6463-4458-0c456777ca18",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-02-11T12:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "444814009",
+                                                "display": "Viral sinusitis (disorder)"
+                                            }
+                                        ],
+                                        "text": "Viral sinusitis (disorder)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "abatementDateTime": "2015-08-07T12:19:15.000Z",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-2"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "resolved"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-03-17T19:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "a4c3ff56-7784-2c2f-0849-23d3718d8c28",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-03-17T19:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "10509002",
+                                                "display": "Acute bronchitis (disorder)"
+                                            }
+                                        ],
+                                        "text": "Acute bronchitis (disorder)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "abatementDateTime": "2009-11-30T19:31:34.000Z",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-3"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "active"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-01-10T10:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "0a85a015-4c86-1fb2-67c4-437e744a39c6",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-01-10T10:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "233604007",
+                                                "display": "Pneumonia"
+                                            }
+                                        ],
+                                        "text": "Pneumonia"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-4"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "active"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-02-03T10:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "1000f311-846d-3bd0-cf0e-e99643442021",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-02-03T10:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "278860009",
+                                                "display": "Chronic low back pain (finding)"
+                                            }
+                                        ],
+                                        "text": "Chronic low back pain (finding)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-5"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "resolved"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-03-07T00:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "97404574-e8bb-bbbc-6dbd-9206fbc2719e",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-03-07T00:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "10509002",
+                                                "display": "Acute bronchitis (disorder)"
+                                            }
+                                        ],
+                                        "text": "Acute bronchitis (disorder)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "abatementDateTime": "2010-08-25T00:36:57.000Z",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-6"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "resolved"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-01-28T07:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "2390c654-89b8-594d-5f34-e2c9c9405b8d",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-01-28T07:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "195662009",
+                                                "display": "Acute viral pharyngitis (disorder)"
+                                            }
+                                        ],
+                                        "text": "Acute viral pharyngitis (disorder)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "abatementDateTime": "2009-12-11T12:19:15.000Z",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-7"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "active"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-02-01T10:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "9d9c783d-4bde-aa2d-e2f0-be6df1d8004b",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-02-01T10:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "162864005",
+                                                "display": "Body mass index 30+ - obesity (finding)"
+                                            }
+                                        ],
+                                        "text": "Body mass index 30+ - obesity (finding)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-8"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "active"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-03-18T10:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "c67a76d1-bb5d-225e-53da-80b50e01ed4d",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "security": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                "code": "SPI"
+                                            },
+                                            {
+                                                "code": "R",
+                                                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+                                            }
+                                        ],
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-03-18T10:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "26929004",
+                                                "display": "Alzheimer's disease (disorder)"
+                                            }
+                                        ],
+                                        "text": "Alzheimer's disease (disorder)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-9"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
+                            },
+                            {
+                                "resource": {
+                                    "subject": {
+                                        "reference": "Patient/patient1"
+                                    },
+                                    "clinicalStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                "code": "active"
+                                            }
+                                        ]
+                                    },
+                                    "recordedDate": "2021-01-31T21:19:15.000Z",
+                                    "identifier": [
+                                        {
+                                            "value": "70481d23-cc22-e7cb-ff26-5792d6032206",
+                                            "use": "usual",
+                                            "system": "https://api.gainwellfhirdemo.com/r4"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "profile": [
+                                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                        ]
+                                    },
+                                    "onsetDateTime": "2021-01-31T21:19:15.000Z",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "40055000",
+                                                "display": "Chronic sinusitis (disorder)"
+                                            }
+                                        ],
+                                        "text": "Chronic sinusitis (disorder)"
+                                    },
+                                    "encounter": {
+                                        "display": "GP Visit"
+                                    },
+                                    "resourceType": "Condition",
+                                    "category": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                    "code": "encounter-diagnosis",
+                                                    "display": "Encounter Diagnosis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "verificationStatus": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                "code": "confirmed"
+                                            }
+                                        ]
+                                    },
+                                    "id": "condition-10"
+                                },
+                                "search": {
+                                    "mode": "match"
+                                }
                             }
+                     
   ]
 }
