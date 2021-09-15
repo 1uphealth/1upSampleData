@@ -59,7 +59,26 @@
         "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
         "valueDecimal": 10.0
       } ],
-      "identifier": [ {
+      "identifier": [       {
+        "period": {
+            "start": "2021-01-01",
+            "end": "2021-05-31"
+        },
+        "system": "https://www.medicare.gov/",
+        "type": {
+            "coding": [
+                {
+                    "code": "U",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "display": "Unspecified identifier"
+                }
+            ],
+            "text": "Unspecified identifier"
+        },
+        "value": "20355555",
+        "use": "official"
+    },
+        {
         "system": "https://github.com/synthetichealth/synthea",
         "value": "f56391c2-dd54-b378-46ef-87c1643a2ba0"
       }, {
@@ -170,7 +189,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan Org"
     },
     "request": {
       "method": "POST",
@@ -209,7 +228,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -248,7 +267,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -287,7 +306,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -326,7 +345,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -365,7 +384,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -404,7 +423,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -443,7 +462,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -482,7 +501,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -521,7 +540,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -560,7 +579,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Medicaid"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -605,7 +624,7 @@
       },
       "payor": [ {
         "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
+        "display": "Demo Medicaid Plan Coverage"
       } ],
       "class": [ {
         "type": {
@@ -616,7 +635,8 @@
           } ],
           "text": "Plan"
         },
-        "value": "Medicaid"
+        "name": "Demo Health Plan",
+        "value": "Demo Health Plan"
       } ]
     },
     "request": {
@@ -1883,11 +1903,13 @@
         },
         "timingDate": "2011-06-15"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -2431,20 +2453,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 562.08,
@@ -2456,63 +2531,7 @@
       "method": "POST",
       "url": "ExplanationOfBenefit"
     }
-  }, {
-    "fullUrl": "Coverage/2a149964-4a48-4bb5-956e-d9ff2650326d",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "2a149964-4a48-4bb5-956e-d9ff2650326d",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "9fec43f3-f897-f358-70fc-7921e10ba355"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
-    }
-  }, {
+  },  {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
     "resource": {
       "resourceType": "Organization",
@@ -3661,11 +3680,13 @@
         },
         "timingDate": "2011-09-14"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -4209,20 +4230,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 562.08,
@@ -4234,63 +4308,7 @@
       "method": "POST",
       "url": "ExplanationOfBenefit"
     }
-  }, {
-    "fullUrl": "Coverage/b44f5ad7-12ae-7a9c-1ce3-ac7a93b11bef",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "b44f5ad7-12ae-7a9c-1ce3-ac7a93b11bef",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "f8fc2189-1a13-9a51-54ce-195c4f9049b8"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
-    }
-  }, {
+  },  {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
     "resource": {
       "resourceType": "Organization",
@@ -5195,11 +5213,13 @@
         },
         "timingDate": "2011-12-13"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -5334,20 +5354,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 635.3520000000001,
@@ -5358,62 +5431,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/9c5b7673-38aa-4c94-0fcc-527f55d538e4",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "9c5b7673-38aa-4c94-0fcc-527f55d538e4",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "53892c11-f92d-36da-6c99-421b0873d560"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -6564,11 +6581,13 @@
         },
         "timingDate": "2012-03-13"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -7112,20 +7131,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 562.08,
@@ -7136,62 +7208,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/e9da7bec-006d-95cd-b222-5dd82518f2a9",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "e9da7bec-006d-95cd-b222-5dd82518f2a9",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "72cdf566-888e-9bec-1c1d-21b42d2f348f"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -8159,11 +8175,13 @@
         },
         "timingDate": "2012-06-13"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -8400,20 +8418,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 651.336,
@@ -8425,63 +8496,7 @@
       "method": "POST",
       "url": "ExplanationOfBenefit"
     }
-  }, {
-    "fullUrl": "Coverage/14ad1e47-9e5e-3bc4-5970-e5cbebc1b7c0",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "14ad1e47-9e5e-3bc4-5970-e5cbebc1b7c0",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "6a53b6f2-5871-cb0f-75b3-de8c75034817"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
-    }
-  }, {
+  },  {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
     "resource": {
       "resourceType": "Organization",
@@ -9390,11 +9405,13 @@
         },
         "timingDate": "2012-12-11"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -9530,20 +9547,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 112.41600000000001,
@@ -9554,62 +9624,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/e26e0c97-80cf-09c6-eb79-3fe23b86de95",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "e26e0c97-80cf-09c6-eb79-3fe23b86de95",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "ad7aab9a-0e8d-8e36-c45b-8ac18cc41337"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -10663,11 +10677,13 @@
         },
         "timingDate": "2013-06-12"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -10904,20 +10920,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 465.128,
@@ -10929,63 +10998,7 @@
       "method": "POST",
       "url": "ExplanationOfBenefit"
     }
-  }, {
-    "fullUrl": "Coverage/fe53c76b-b65c-76b0-b5a9-5b0928c6a84d",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "fe53c76b-b65c-76b0-b5a9-5b0928c6a84d",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "ca64d1d8-685f-9f28-cef6-7804a9df95f7"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
-    }
-  }, {
+  },  {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
     "resource": {
       "resourceType": "Organization",
@@ -12037,11 +12050,13 @@
         },
         "timingDate": "2013-12-10"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -12278,20 +12293,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 417.08,
@@ -12302,62 +12370,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/5b9b959e-1b56-c572-9674-9c5d0b6b0661",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "5b9b959e-1b56-c572-9674-9c5d0b6b0661",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "4eef5fef-4db7-d2b6-0c11-fd4f6baae2dd"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -13350,11 +13362,13 @@
         },
         "timingDate": "2014-06-11"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -13489,20 +13503,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 307.664,
@@ -13513,62 +13580,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/0a3afa21-0cfa-7e8c-02dc-0346a985dfdd",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "0a3afa21-0cfa-7e8c-02dc-0346a985dfdd",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "5f78935c-16ab-44e0-f810-3ef0011e3450"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -14622,11 +14633,13 @@
         },
         "timingDate": "2014-12-09"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -14863,20 +14876,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 483.96000000000004,
@@ -14887,62 +14953,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/8e26bfee-2161-f299-c373-7fd5d25a972d",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "8e26bfee-2161-f299-c373-7fd5d25a972d",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "7d8912ad-d95c-753f-2ead-a2bab20e84dd"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -16093,11 +16103,13 @@
         },
         "timingDate": "2015-12-15"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -16641,20 +16653,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 562.08,
@@ -16665,62 +16730,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/69a7f9d9-0469-06eb-79ce-21e1a76316b7",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "69a7f9d9-0469-06eb-79ce-21e1a76316b7",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "9cc2dc18-7a25-c909-4485-8626a4dd0741"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -18179,11 +18188,13 @@
         },
         "timingDate": "2016-12-20"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -18319,20 +18330,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 112.41600000000001,
@@ -18343,62 +18407,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/2c412e4a-054e-2fb6-658c-831e32c76696",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "2c412e4a-054e-2fb6-658c-831e32c76696",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "9a6b16e2-6664-1844-feb9-1621976f7da5"
-      } ],
-      "status": "active",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d",
@@ -18948,11 +18956,13 @@
         },
         "timingDate": "2017-01-10"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -18986,20 +18996,73 @@
           "reference": "Encounter/b38a8c66-9547-b9b8-c2e0-dab3b385c126"
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 77.49,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 0.0,
@@ -19010,63 +19073,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/b91c6f25-7a42-9d67-7cee-5f7bf69856c6",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "b91c6f25-7a42-9d67-7cee-5f7bf69856c6",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "0cd8c0ee-a7c6-a810-d240-536960a8be07"
-      } ],
-      "status": "cancelled",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00",
-        "end": "2017-12-26T23:26:04+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d",
@@ -20320,11 +20326,13 @@
           } ]
         } ]
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -20488,20 +20496,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 77.49,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 117.136,
@@ -20512,63 +20573,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/81d05b0b-1848-8a2d-8043-99f6787ffc6c",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "81d05b0b-1848-8a2d-8043-99f6787ffc6c",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "7ca1ac71-b02e-f9eb-1621-3148fc539d58"
-      } ],
-      "status": "cancelled",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00",
-        "end": "2017-12-26T23:26:04+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -21536,11 +21540,13 @@
         },
         "timingDate": "2017-12-26"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -21777,20 +21783,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 459.064,
@@ -21801,63 +21860,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/fb99e4a3-8307-0b9b-35e7-38e26ec4cc03",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "fb99e4a3-8307-0b9b-35e7-38e26ec4cc03",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "f52cbe08-da56-96a7-3750-14bf1034f443"
-      } ],
-      "status": "cancelled",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00",
-        "end": "2017-12-26T23:26:04+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -22825,11 +22827,13 @@
         },
         "timingDate": "2019-01-01"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -23066,20 +23070,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 432.12,
@@ -23090,63 +23147,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/7e1de28b-9f46-6f90-4c6e-7e2e1ee52962",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "7e1de28b-9f46-6f90-4c6e-7e2e1ee52962",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "592974ee-19d1-5e1d-6041-b989f86d82d8"
-      } ],
-      "status": "cancelled",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00",
-        "end": "2017-12-26T23:26:04+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d",
@@ -23812,11 +23812,13 @@
           } ]
         } ]
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -23879,20 +23881,73 @@
           } ]
         }
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 77.49,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 0.0,
@@ -23903,63 +23958,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/0748fd3e-0023-925d-c126-397f8ef960f2",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "0748fd3e-0023-925d-c126-397f8ef960f2",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "8617f014-09b4-3fea-a3e8-9cf68e5541bb"
-      } ],
-      "status": "cancelled",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00",
-        "end": "2017-12-26T23:26:04+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -24870,11 +24868,13 @@
         },
         "timingDate": "2020-01-07"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -25010,20 +25010,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 112.41600000000001,
@@ -25034,63 +25087,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/fa516fe6-d4d2-a455-ad4f-99e541dea6de",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "fa516fe6-d4d2-a455-ad4f-99e541dea6de",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "d649ba91-3b4a-4605-3308-12da02ad3766"
-      } ],
-      "status": "cancelled",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00",
-        "end": "2020-03-20T20:17:34+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d",
@@ -27293,11 +27289,13 @@
           } ]
         } ]
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -27635,20 +27633,73 @@
           } ]
         }
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 77.49,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 1.816,
@@ -27659,63 +27710,6 @@
     "request": {
       "method": "POST",
       "url": "ExplanationOfBenefit"
-    }
-  }, {
-    "fullUrl": "Coverage/ec4fc47a-1e56-f3ed-25ba-3c013ca958c5",
-    "resource": {
-      "resourceType": "Coverage",
-      "id": "ec4fc47a-1e56-f3ed-25ba-3c013ca958c5",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage" ]
-      },
-      "identifier": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MB",
-            "display": "MB"
-          } ],
-          "text": "MB"
-        },
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "ecb9ed64-0143-ce0c-c81d-477b21ce24e3"
-      } ],
-      "status": "cancelled",
-      "subscriberId": "999-93-9175",
-      "beneficiary": {
-        "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
-      },
-      "relationship": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
-          "code": "self",
-          "display": "Self"
-        } ],
-        "text": "Self"
-      },
-      "period": {
-        "start": "1970-01-01T01:00:00+01:00",
-        "end": "2020-03-20T20:17:34+01:00"
-      },
-      "payor": [ {
-        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-        "display": "Medicaid"
-      } ],
-      "class": [ {
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/2.0.0/CodeSystem-coverage-class",
-            "code": "plan",
-            "display": "Plan"
-          } ],
-          "text": "Plan"
-        },
-        "value": "Medicaid"
-      } ]
-    },
-    "request": {
-      "method": "POST",
-      "url": "Coverage"
     }
   }, {
     "fullUrl": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388",
@@ -28626,11 +28620,13 @@
         },
         "timingDate": "2021-01-12"
       } ],
-      "insurance": [ {
-        "focal": true,
-        "coverage": {
-          "display": "Medicaid"
-        }
+      "insurance": [                     {
+                        "focal": true,
+                        "coverage": {
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+                            "display": "NO_INSURANCE"
+                        }
+                    
       } ],
       "item": [ {
         "sequence": 1,
@@ -28766,20 +28762,73 @@
           }
         } ]
       } ],
-      "total": [ {
-        "category": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
-            "code": "submitted",
-            "display": "Submitted Amount"
-          } ],
-          "text": "Submitted Amount"
-        },
-        "amount": {
-          "value": 129.16,
-          "currency": "USD"
-        }
-      } ],
+      "total": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "submitted",
+                  "display": "Submitted Amount"
+                }
+              ],
+              "text": "Submitted Amount"
+            },
+            "amount": { "value": 100.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "eligible",
+                  "display": "Eligible Amount"
+                }
+              ],
+              "text": "Eligible Amount"
+            },
+            "amount": { "value": 85.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ],
+              "text": "Deductible"
+            },
+            "amount": { "value": 0.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "copay",
+                  "display": "CoPay"
+                }
+              ],
+              "text": "CoPay"
+            },
+            "amount": { "value": 25.00, "currency": "USD" }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                  "code": "benefit",
+                  "display": "Benefit Amount"
+                }
+              ],
+              "text": "Benefit Amount"
+            },
+            "amount": { "value": 60.00, "currency": "USD" }
+          }
+                ],
       "payment": {
         "amount": {
           "value": 112.41600000000001,
@@ -28872,8 +28921,6 @@
       }, {
         "reference": "ExplanationOfBenefit/d27eb822-36c8-445e-8fa7-29a5b21245e3"
       }, {
-        "reference": "Coverage/2a149964-4a48-4bb5-956e-d9ff2650326d"
-      }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
         "reference": "Location/5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
@@ -28916,8 +28963,6 @@
       }, {
         "reference": "ExplanationOfBenefit/26292811-7048-49a5-5812-bf8b3d78e777"
       }, {
-        "reference": "Coverage/b44f5ad7-12ae-7a9c-1ce3-ac7a93b11bef"
-      }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
         "reference": "Location/5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
@@ -28951,8 +28996,6 @@
         "reference": "Claim/20df5d77-3b46-83cc-e6c0-19c7984661bf"
       }, {
         "reference": "ExplanationOfBenefit/c350b8d5-492d-6fcc-0a84-152418cb39cf"
-      }, {
-        "reference": "Coverage/9c5b7673-38aa-4c94-0fcc-527f55d538e4"
       }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
@@ -28996,8 +29039,6 @@
       }, {
         "reference": "ExplanationOfBenefit/d4b3547b-63ff-ea20-ae95-c92330d83634"
       }, {
-        "reference": "Coverage/e9da7bec-006d-95cd-b222-5dd82518f2a9"
-      }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
         "reference": "Location/5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
@@ -29034,8 +29075,6 @@
       }, {
         "reference": "ExplanationOfBenefit/136ea8ca-1ac1-9ada-6910-e999ee9f9d60"
       }, {
-        "reference": "Coverage/14ad1e47-9e5e-3bc4-5970-e5cbebc1b7c0"
-      }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
         "reference": "Location/5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
@@ -29069,8 +29108,6 @@
         "reference": "Claim/3da5683a-9b3d-5419-3c9f-544113512734"
       }, {
         "reference": "ExplanationOfBenefit/3300319f-b845-6d40-a85b-eb0422264987"
-      }, {
-        "reference": "Coverage/e26e0c97-80cf-09c6-eb79-3fe23b86de95"
       }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
@@ -29112,8 +29149,6 @@
       }, {
         "reference": "ExplanationOfBenefit/29d018a5-850d-30dd-35d9-5fccf1cce76b"
       }, {
-        "reference": "Coverage/fe53c76b-b65c-76b0-b5a9-5b0928c6a84d"
-      }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
         "reference": "Location/5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
@@ -29154,8 +29189,6 @@
       }, {
         "reference": "ExplanationOfBenefit/81e31dd4-7286-771e-713b-4668bc960021"
       }, {
-        "reference": "Coverage/5b9b959e-1b56-c572-9674-9c5d0b6b0661"
-      }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
         "reference": "Location/5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
@@ -29193,8 +29226,6 @@
         "reference": "Claim/74a603cf-a7cc-c2db-1993-ba1bc444add3"
       }, {
         "reference": "ExplanationOfBenefit/77eaf6a9-cd10-333a-21af-d6974dbc8c09"
-      }, {
-        "reference": "Coverage/0a3afa21-0cfa-7e8c-02dc-0346a985dfdd"
       }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
@@ -29235,8 +29266,6 @@
         "reference": "Claim/c5a73027-9903-7c2a-ed39-897a2ed1c28c"
       }, {
         "reference": "ExplanationOfBenefit/c4bfd3d2-f9b6-1e06-f80e-b6b1f7f5b5bd"
-      }, {
-        "reference": "Coverage/8e26bfee-2161-f299-c373-7fd5d25a972d"
       }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
@@ -29279,8 +29308,6 @@
         "reference": "Claim/45ffbf29-1280-e869-b43b-b47b1b4bf555"
       }, {
         "reference": "ExplanationOfBenefit/08300c7a-8ab4-099a-f51b-946414ff22ec"
-      }, {
-        "reference": "Coverage/69a7f9d9-0469-06eb-79ce-21e1a76316b7"
       }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
@@ -29340,8 +29367,6 @@
       }, {
         "reference": "ExplanationOfBenefit/70836a81-06b8-67f6-36fa-9b4dec41a30c"
       }, {
-        "reference": "Coverage/2c412e4a-054e-2fb6-658c-831e32c76696"
-      }, {
         "reference": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d"
       }, {
         "reference": "Location/e111a884-fc5e-3766-9077-c44100ba56e2"
@@ -29359,8 +29384,6 @@
         "reference": "Claim/689ae357-991d-1511-7aec-403a56e5d87c"
       }, {
         "reference": "ExplanationOfBenefit/3d7e57a2-08eb-2e42-32c9-5cded7f579f3"
-      }, {
-        "reference": "Coverage/b91c6f25-7a42-9d67-7cee-5f7bf69856c6"
       }, {
         "reference": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d"
       }, {
@@ -29406,8 +29429,6 @@
       }, {
         "reference": "ExplanationOfBenefit/e6c4234b-19a8-4e5c-35cb-5d05a97d5788"
       }, {
-        "reference": "Coverage/81d05b0b-1848-8a2d-8043-99f6787ffc6c"
-      }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
         "reference": "Location/5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
@@ -29443,8 +29464,6 @@
         "reference": "Claim/57428f6f-5ccf-ac90-6303-23f76efeee2c"
       }, {
         "reference": "ExplanationOfBenefit/3e836de9-1482-479f-f2f1-7abd993e42b2"
-      }, {
-        "reference": "Coverage/fb99e4a3-8307-0b9b-35e7-38e26ec4cc03"
       }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
@@ -29482,8 +29501,6 @@
       }, {
         "reference": "ExplanationOfBenefit/dd3b5433-3c06-4a6b-7087-09e35475ce2a"
       }, {
-        "reference": "Coverage/7e1de28b-9f46-6f90-4c6e-7e2e1ee52962"
-      }, {
         "reference": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d"
       }, {
         "reference": "Location/e111a884-fc5e-3766-9077-c44100ba56e2"
@@ -29505,8 +29522,6 @@
         "reference": "Claim/67d56121-4968-0d12-2e3a-79c279226991"
       }, {
         "reference": "ExplanationOfBenefit/47dadfc4-025f-f436-c8a8-71fa74b433a6"
-      }, {
-        "reference": "Coverage/0748fd3e-0023-925d-c126-397f8ef960f2"
       }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
@@ -29541,8 +29556,6 @@
         "reference": "Claim/9e393cc4-b3b1-bb57-5826-9177f1dac836"
       }, {
         "reference": "ExplanationOfBenefit/19227ad2-9577-2a29-7756-716720f3df5a"
-      }, {
-        "reference": "Coverage/fa516fe6-d4d2-a455-ad4f-99e541dea6de"
       }, {
         "reference": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d"
       }, {
@@ -29617,8 +29630,6 @@
         "reference": "Claim/41379c50-3551-ad45-6037-9ffc62de3483"
       }, {
         "reference": "ExplanationOfBenefit/14fcdfb6-d82a-2dc8-3308-39062d3db590"
-      }, {
-        "reference": "Coverage/ec4fc47a-1e56-f3ed-25ba-3c013ca958c5"
       }, {
         "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       }, {
