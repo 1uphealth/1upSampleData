@@ -189,7 +189,7 @@
         } ],
         "text": "Payer"
       } ],
-      "name": "Demo Health Plan Org"
+      "name": "Demo Health Plan"
     },
     "request": {
       "method": "POST",
@@ -607,6 +607,15 @@
         "value": "743e3460-9fa9-333b-a780-41e55deac25f"
       } ],
       "status": "active",
+      "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "HIP"
+            }
+        ],
+        "text": "Health Insurance Plan Policy"
+      },
       "subscriberId": "999-93-9175",
       "beneficiary": {
         "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
@@ -635,8 +644,7 @@
           } ],
           "text": "Plan"
         },
-        "name": "Demo Health Plan",
-        "value": "Demo Health Plan"
+        "value": "Medicaid"
       } ]
     },
     "request": {
