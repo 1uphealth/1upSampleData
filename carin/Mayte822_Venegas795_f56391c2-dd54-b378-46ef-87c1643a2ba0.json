@@ -22812,7 +22812,7 @@
       "resourceType": "ExplanationOfBenefit",
       "id": "47dadfc4-025f-f436-c8a8-71fa74b433a6",
       "meta": {
-        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy" ]
+        "profile": [ "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional" ]
       },
       "contained": [ {
         "resourceType": "ServiceRequest",
