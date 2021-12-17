@@ -3,8 +3,9 @@
   "id": "EOBPharmacy1",
   "meta": {
     "lastUpdated": "2019-12-12T09:14:11+00:00",
+    "source": "Organization/PayerOrganizationExample1",    
     "profile": [
-      "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"
+      "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy|1.1.0"
     ]
   },
   "language": "en-US",
@@ -96,24 +97,24 @@
       }
     },
     {
-      "sequence": 5,
-      "category": {
-        "coding": [
+      "sequence" : 5,
+      "category" : {
+        "coding" : [
           {
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-            "code": "dawcode"
+            "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+            "code" : "dawcode"
           }
         ]
       },
-      "code": {
-        "coding": [
+      "code" : {
+        "coding" : [
           {
-            "system": "http://terminology.hl7.org/CodeSystem/NCPDP/DispensedAsWrittenOrProductSelectionCode",
-            "code": "7"
+            "system" : "http://terminology.hl7.org/CodeSystem/NCPDPDispensedAsWrittenOrProductSelectionCode",
+            "code" : "7"
           }
         ]
       }
-    },
+    },    
     {
       "sequence": 4,
       "category": {
@@ -148,44 +149,6 @@
       }
     },
     {
-      "sequence": 2,
-      "category": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-            "code": "brandgenericcode"
-          }
-        ]
-      },
-      "code": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/NCPDP/BrandGenericIndicator",
-            "code": "2"
-          }
-        ]
-      }
-    },
-    {
-      "sequence": 3,
-      "category": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-            "code": "rxorigincode"
-          }
-        ]
-      },
-      "code": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/NCPDP/PrescriptionOriginCode",
-            "code": "1"
-          }
-        ]
-      }
-    },
-    {
       "sequence": 6,
       "category": {
         "coding": [
@@ -196,32 +159,13 @@
         ]
       },
       "timingDate": "2019-10-31"
-    },
-    {
-      "sequence": 8,
-      "category": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-            "code": "compoundcode"
-          }
-        ]
-      },
-      "code": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/NCPDP/CompoundCode",
-            "code": "Dummy"
-          }
-        ]
-      }
     }
   ],
   "insurance": [
     {
       "focal": true,
       "coverage": {
-        "reference": "Coverage/Coverage1"
+        "reference": "Coverage/CoverageEx2"
       }
     }
   ],
@@ -316,6 +260,22 @@
       "category": {
         "coding": [
           {
+            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+            "code": "innetwork",
+            "display": "In Network"
+          }
+        ],
+        "text": "Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider."
+      },
+      "amount": {
+        "value": 3000,
+        "currency": "USD"
+      }
+    },      
+    {
+      "category": {
+        "coding": [
+          {
             "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
             "code": "paidtoprovider"
           }
@@ -356,20 +316,6 @@
         "value": 0,
         "currency": "USD"
       }
-    },
-    {
-      "category": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
-            "code": "innetwork"
-          }
-        ]
-      },
-      "amount": {
-        "value": 0,
-        "currency": "USD"
-      }
-    }
+    }   
   ]
 }

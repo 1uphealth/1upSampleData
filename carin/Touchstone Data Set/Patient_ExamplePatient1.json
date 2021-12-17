@@ -5,14 +5,10 @@
     "lastUpdated": "2020-10-30T09:48:01.8512764-04:00",
     "source": "Organization/PayerOrganizationExample1",
     "profile": [
-      "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"
+      "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient|1.1.0"
     ]
   },
   "language": "en-US",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier.: 88800933501</p><p><b>active</b>: true</p><p><b>name</b>: Member 01 Test </p><p><b>telecom</b>: ph: 5555555551, ph: 5555555552, ph: 5555555553, ph: 5555555554, ph: 5555555555(HOME), ph: 5555555556(WORK), <a href=\"mailto:GXXX@XXXX.com\">GXXX@XXXX.com</a>, fax: 5555555557</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1943-01-01</p><p><b>address</b>: </p><ul><li>123 Main Street PITTSBURGH PA 15239 </li><li>456 Murray Avenue PITTSBURGH PA 15217 </li></ul><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\">unknown</span></p><h3>Communications</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td><span title=\"Codes: {urn:ietf:bcp:47 en}\">English</span></td><td>true</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-PayerOrganizationExample1.html\">UPMC Health Plan. Generated Summary: NAIC Code: 95216; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}\">Payer</span>; name: UPMC Health Plan; Phone: 1-844-220-4785 TTY: 711, Phone: 1-866-406-8762</a></p></div>"
-  },
   "identifier": [
     {
       "type": {
