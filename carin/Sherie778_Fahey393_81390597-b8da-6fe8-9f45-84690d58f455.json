@@ -60,9 +60,24 @@
         "valueDecimal": 45.84844908792677
       } ],
       "identifier": [ {
-        "system": "https://github.com/synthetichealth/synthea",
-        "value": "81390597-b8da-6fe8-9f45-84690d58f455"
-      }, {
+        "period": {
+            "start": "2021-01-01",
+            "end": "2021-05-31"
+        },
+        "system": "https://www.medicare.gov/",
+        "type": {
+            "coding": [
+                {
+                    "code": "U",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "display": "Unspecified identifier"
+                }
+            ],
+            "text": "Unspecified identifier"
+        },
+        "value": "20366666",
+        "use": "official"
+    }, {
         "type": {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
