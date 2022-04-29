@@ -1619,7 +1619,7 @@
                         "state": "NV"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
@@ -1734,7 +1734,7 @@
                         "value": "1922056589"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "qualification": [
                     {
                         "code": {
@@ -1836,7 +1836,7 @@
                         "state": "NV"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
@@ -1906,7 +1906,7 @@
                         "state": "NV"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
@@ -1976,7 +1976,7 @@
                         "state": "NV"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
@@ -2075,7 +2075,7 @@
                         "state": "NV"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
@@ -2117,7 +2117,7 @@
                         "value": "1134243454"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "qualification": [
                     {
                         "code": {
@@ -2177,7 +2177,7 @@
                         "value": "1164746772"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "qualification": [
                     {
                         "code": {
@@ -2237,7 +2237,7 @@
                         "value": "1093904633"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "qualification": [
                     {
                         "code": {
@@ -2319,7 +2319,7 @@
                         "state": "NV"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
@@ -2432,7 +2432,7 @@
                         "value": "1609823533"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "qualification": [
                     {
                         "code": {
