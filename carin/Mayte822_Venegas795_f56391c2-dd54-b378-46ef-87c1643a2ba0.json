@@ -797,18 +797,10 @@
         "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
       },
       "practitioner": {
-        "identifier": {
-          "system": "http://hl7.org/fhir/sid/us-npi",
-          "value": "9999985099"
-        },
-        "display": "Dr. Elvin140 Lynch190"
+        "reference": "Practitioner/f8ad3d0d-0a9f-31d2-a435-5a379a22f018"
       },
       "organization": {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "cdabf878-6d1f-3bfd-a266-40efd24af388"
-        },
-        "display": "PCP22327"
+        "reference": "Organization/cdabf878-6d1f-3bfd-a266-40efd24af388"
       },
       "code": [ {
         "coding": [ {
@@ -826,13 +818,11 @@
         } ],
         "text": "General Practice"
       } ],
-      "location": [ {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
-        },
-        "display": "PCP22327"
-      } ],
+      "location" : [
+        {
+        "reference" : "Location/5dff9e97-fb6d-3e39-bf90-e44f310eb2a2"
+        }
+      ],
       "telecom": [ {
         "system": "phone",
         "value": "617-734-6500"
@@ -17926,18 +17916,10 @@
         "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
       },
       "practitioner": {
-        "identifier": {
-          "system": "http://hl7.org/fhir/sid/us-npi",
-          "value": "9999999579"
-        },
-        "display": "Dr. Darrick836 Franecki195"
+        "reference": "Practitioner/820ee8ba-855a-3aaf-9eeb-6603cfdaee25"
       },
       "organization": {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "3d10019f-c88e-3de5-9916-6107b9c0263d"
-        },
-        "display": "NEWTON-WELLESLEY HOSPITAL"
+        "reference": "Organization/3d10019f-c88e-3de5-9916-6107b9c0263d"
       },
       "code": [ {
         "coding": [ {
@@ -17955,13 +17937,11 @@
         } ],
         "text": "General Practice"
       } ],
-      "location": [ {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "e111a884-fc5e-3766-9077-c44100ba56e2"
-        },
-        "display": "NEWTON-WELLESLEY HOSPITAL"
-      } ],
+      "location" : [
+        {
+        "reference" : "Location/e111a884-fc5e-3766-9077-c44100ba56e2"
+        }
+      ],
       "telecom": [ {
         "system": "phone",
         "value": "6172436000"

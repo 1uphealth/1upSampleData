@@ -2259,18 +2259,10 @@
         "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
       },
       "practitioner": {
-        "identifier": {
-          "system": "http://hl7.org/fhir/sid/us-npi",
-          "value": "9999963809"
-        },
-        "display": "Dr. Arlie183 Anderson154"
+        "reference": "Practitioner/fa4ab376-e03e-32d4-ae52-041258812772"
       },
       "organization": {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "b3976fda-3af9-3719-b841-df4ea3cf0fa7"
-        },
-        "display": "PCP69921"
+        "reference": "Organization/b3976fda-3af9-3719-b841-df4ea3cf0fa7"
       },
       "code": [ {
         "coding": [ {
@@ -2288,13 +2280,11 @@
         } ],
         "text": "General Practice"
       } ],
-      "location": [ {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "2b19d09e-5edb-3239-927d-ca7e0ff2a081"
-        },
-        "display": "PCP69921"
-      } ],
+      "location" : [
+        {
+        "reference" : "Location/2b19d09e-5edb-3239-927d-ca7e0ff2a081"
+        }
+      ],
       "telecom": [ {
         "system": "phone",
         "value": "978-470-3178"
@@ -3785,18 +3775,10 @@
         "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
       },
       "practitioner": {
-        "identifier": {
-          "system": "http://hl7.org/fhir/sid/us-npi",
-          "value": "9999999969"
-        },
-        "display": "Dr. Dagny669 Wyman904"
+        "reference": "Practitioner/ca293c66-08f3-3b38-867e-af7767b858bd"
       },
       "organization": {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4"
-        },
-        "display": "LAWRENCE GENERAL HOSPITAL"
+        "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4"
       },
       "code": [ {
         "coding": [ {
@@ -3814,13 +3796,11 @@
         } ],
         "text": "General Practice"
       } ],
-      "location": [ {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "00baacd6-0e7a-32ab-af81-7a06b600e802"
-        },
-        "display": "LAWRENCE GENERAL HOSPITAL"
-      } ],
+      "location" : [
+        {
+        "reference" : "Location/00baacd6-0e7a-32ab-af81-7a06b600e802"
+        }
+      ],
       "telecom": [ {
         "system": "phone",
         "value": "9786834000"
@@ -18525,18 +18505,10 @@
         "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
       },
       "practitioner": {
-        "identifier": {
-          "system": "http://hl7.org/fhir/sid/us-npi",
-          "value": "9999906659"
-        },
-        "display": "Dr. Taylor21 VonRueden376"
+        "reference": "Practitioner/78ff255f-b391-3649-ad3a-bc85c95b8814"
       },
       "organization": {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "f1313c7d-3148-335b-adc3-337f15567b82"
-        },
-        "display": "WINCHESTER HOSPITAL FAMILY MEDICAL CENTER"
+        "reference": "Organization/f1313c7d-3148-335b-adc3-337f15567b82"
       },
       "code": [ {
         "coding": [ {
@@ -18554,13 +18526,11 @@
         } ],
         "text": "General Practice"
       } ],
-      "location": [ {
-        "identifier": {
-          "system": "https://github.com/synthetichealth/synthea",
-          "value": "9e412665-c5ea-3948-831a-16ead4f07f93"
-        },
-        "display": "WINCHESTER HOSPITAL FAMILY MEDICAL CENTER"
-      } ],
+      "location" : [
+        {
+        "reference" : "Location/9e412665-c5ea-3948-831a-16ead4f07f93"
+        }
+      ],
       "telecom": [ {
         "system": "phone",
         "value": "978-988-6105"
