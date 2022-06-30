@@ -19099,6 +19099,8 @@
       "url": "Claim"
     }
   }, {
+    "fullUrl": "ExplanationOfBenefit/EOBOral2",
+    "resource": {
     "resourceType" : "ExplanationOfBenefit",
     "id" : "EOBOral2",
     "meta" : {
@@ -19430,7 +19432,12 @@
         }
       }
     ]
-  }, {
+  },
+  "request": {
+    "method": "POST",
+    "url": "ExplanationOfBenefit"
+  }
+}, {
     "fullUrl": "ExplanationOfBenefit/e6c4234b-19a8-4e5c-35cb-5d05a97d5788",
     "resource": {
       "resourceType": "ExplanationOfBenefit",
