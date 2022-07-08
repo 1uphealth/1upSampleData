@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: 1upSampleData
+  description: "Synthetic FHIR JSON data used for testing purposes"
+  annotations:
+    github.com/project-slug: 1uphealth/1upSampleData
+spec:
+  type: other
+  lifecycle: experimental
+  owner: product
+
+
