@@ -4,7 +4,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                    "reference": "Patient/12356789123",
+                    "display": "John Allen"
                 },
                 "status": "final",
                 "effectiveDateTime": "2021-02-16T08:17:00.000Z",
@@ -68,7 +69,8 @@
                 ],
                 "performer": [
                     {
-                        "reference": "Practitioner/practitioner1"
+                        "reference": "Practitioner/1922056589",
+                        "display":"ELLIS LAMONT"
                     }
                 ],
                 "valueQuantity": {
@@ -83,7 +85,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                    "reference": "Patient/12356789123",
+                    "display": "John Allen"
                 },
                 "status": "final",
                 "method": {
@@ -171,7 +174,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                    "reference": "Patient/12356789123",
+                    "display": "John Allen"
                 },
                 "status": "final",
                 "bodySite": {
@@ -259,7 +263,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                    "reference": "Patient/12356789123",
+                    "display": "John Allen"
                 },
                 "status": "final",
                 "method": {
@@ -404,7 +409,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                    "reference": "Patient/12356789123",
+                    "display": "John Allen"
                 },
                 "status": "final",
                 "interpretation": [
@@ -439,7 +445,8 @@
                 },
                 "performer": [
                     {
-                        "reference": "Practitioner/practitioner1"
+                        "reference": "Practitioner/1922056589",
+                        "display":"ELLIS LAMONT"
                     }
                 ],
                 "id": "Observation-real-world-patient-glucose-7",
@@ -477,7 +484,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                    "reference": "Patient/12356789123",
+                    "display": "John Allen"
                 },
                 "status": "final",
                 "interpretation": [
@@ -509,7 +517,8 @@
                 },
                 "performer": [
                     {
-                        "reference": "Practitioner/practitioner1"
+                        "reference": "Practitioner/1922056589",
+                        "display":"ELLIS LAMONT"
                     }
                 ],
                 "id": "Observation-hemoglobin-5",
@@ -583,7 +592,8 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "doseQuantity": {
                     "value": 0.5,
@@ -638,7 +648,8 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "doseQuantity": {
                     "value": 5,
@@ -689,7 +700,8 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "doseQuantity": {
                     "value": 5,
@@ -733,7 +745,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -793,7 +806,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -853,7 +867,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -913,7 +928,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -972,7 +988,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1031,7 +1048,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1091,7 +1109,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1151,7 +1170,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1210,7 +1230,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1269,7 +1290,8 @@
         {
             "resource": {
                 "subject": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1675,7 +1697,8 @@
                 },
                 "subscriberId": "999-93-9175",
                 "beneficiary": {
-                    "reference": "Patient/f56391c2-dd54-b378-46ef-87c1643a2ba0"
+                    "reference": "Patient/12356789123",
+                    "display": "John Allen"
                 },
                 "relationship": {
                     "coding": [
@@ -1692,7 +1715,7 @@
                 },
                 "payor": [
                     {
-                        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                                                "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
                         "display": "Demo Medicaid Plan Coverage"
                     }
                 ],
@@ -2476,7 +2499,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -2665,13 +2689,16 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Organization/1336349539"
+                    "reference": "Organization/1336349539",
+                    "display": "ISD LAS VEGAS LLC"
                 },
                 "insurer": {
-                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                        "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "payment": {
                     "type": {
@@ -7982,7 +8009,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -8250,13 +8278,16 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Organization/1861439952"
+                    "reference": "Organization/1861439952",
+                    "display":"SUNRISE HOSPITAL & MEDICAL CENTER"
                 },
                 "insurer": {
-                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                        "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "payment": {
                     "type": {
@@ -8283,7 +8314,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/1922056589"
+                            "reference": "Practitioner/1922056589",
+                            "display":"ELLIS LAMONT"
                         }
                     }
                 ],
@@ -8807,7 +8839,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -9015,13 +9048,16 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Organization/1104870187"
+                    "reference": "Organization/1104870187",
+                    "display":"MOUNTAINVIEW HOSPITAL AND MEDICAL CENTER"
                 },
                 "insurer": {
-                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                        "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "id": "7021312029739",
                 "careTeam": [
@@ -9037,7 +9073,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/1922056589"
+                            "reference": "Practitioner/1922056589",
+                            "display":"ELLIS LAMONT"
                         }
                     },
                     {
@@ -9052,7 +9089,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/1164746772"
+                            "reference": "Practitioner/1164746772",
+                            "display":"ALEMI GOLNAZ"
                         }
                     }
                 ],
@@ -9317,7 +9355,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -9495,13 +9534,16 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Organization/1003166505"
+                    "reference": "Organization/1003166505",
+                    "display":"WELL CARE DISCOUNT PHARMACY LLC"
                 },
                 "insurer": {
-                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                        "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "payment": {
                     "type": {
@@ -9623,7 +9665,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -9831,13 +9874,16 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Organization/1104870187"
+                    "reference": "Organization/1104870187",
+                    "display":"MOUNTAINVIEW HOSPITAL AND MEDICAL CENTER"
                 },
                 "insurer": {
-                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                        "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "payment": {
                     "type": {
@@ -9864,7 +9910,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/1093904633"
+                            "reference": "Practitioner/1093904633",
+                            "display":"RAZA KASHIF"
                         }
                     },
                     {
@@ -9879,7 +9926,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/1093904633"
+                            "reference": "Practitioner/1093904633",
+                            "display":"RAZA KASHIF"
                         }
                     }
                 ],
@@ -10483,7 +10531,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -10747,13 +10796,16 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Organization/1194045336"
+                    "reference": "Organization/1194045336",
+                    "display":"MARQUIS CENTENNIAL HILLS"
                 },
                 "insurer": {
-                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                        "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "payment": {
                     "type": {
@@ -10780,7 +10832,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/1134243454"
+                            "reference": "Practitioner/1134243454",
+                            "display":"PATEL SUJAY"
                         }
                     }
                 ],
@@ -10912,7 +10965,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -11059,7 +11113,8 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Organization/1720037799"
+                    "reference": "Organization/1720037799",
+                    "display":"NORTH VISTA HOSPITAL"
                 },
                 "payment": {
                     "type": {
@@ -11085,7 +11140,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/1609823533"
+                            "reference": "Practitioner/1609823533",
+                            "display":"BERNSTEIN KEVIN"
                         }
                     },
                     {
@@ -11100,7 +11156,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/456342468"
+                                                        "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                         }
                     }
                 ],
@@ -11255,7 +11312,8 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "billablePeriod": {
                     "start": "2021-01-05",
@@ -11270,7 +11328,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -11414,7 +11473,8 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Practitioner/456342468"
+                                                "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                 },
                 "payment": {
                     "type": {
@@ -11443,7 +11503,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/456342468"
+                                                        "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                         }
                     },
                     {
@@ -11458,7 +11519,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/456342468"
+                                                        "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                         }
                     }
                 ],
@@ -11645,7 +11707,8 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "billablePeriod": {
                     "start": "2021-02-02",
@@ -11660,7 +11723,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -11943,10 +12007,12 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Practitioner/1922056589"
+                    "reference": "Practitioner/1922056589",
+                            "display":"ELLIS LAMONT"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "payment": {
                     "type": {
@@ -11971,7 +12037,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/456342468"
+                                                        "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                         }
                     }
                 ],
@@ -12088,7 +12155,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -12235,7 +12303,8 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Practitioner/456342468"
+                                                "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                 },
                 "payment": {
                     "type": {
@@ -12261,7 +12330,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/456342468"
+                                                        "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                         }
                     },
                     {
@@ -12276,7 +12346,8 @@
                             ]
                         },
                         "provider": {
-                            "reference": "Practitioner/456342468"
+                                                        "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                         }
                     }
                 ],
@@ -12554,7 +12625,8 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "billablePeriod": {
                     "start": "2021-02-05",
@@ -12569,7 +12641,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -12732,13 +12805,15 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Practitioner/456342468"
+                                                "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                 },
                 "insurer": {
                     "display": "Medicare"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "payment": {
                     "type": {
@@ -12807,7 +12882,8 @@
                 "insurance": [
                     {
                         "coverage": {
-                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244"
+                            "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
+"display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -12970,13 +13046,15 @@
                     }
                 ],
                 "provider": {
-                    "reference": "Practitioner/456342468"
+                                                "reference": "Practitioner/456342468",
+                            "display":"Caitlyn Medhurst"
                 },
                 "insurer": {
                     "display": "Medicare"
                 },
                 "patient": {
-                    "reference": "Patient/12356789123"
+                                        "reference": "Patient/12356789123",
+                    "display":"John Allen"
                 },
                 "payment": {
                     "type": {
