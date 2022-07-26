@@ -1145,7 +1145,8 @@
                     "text": "Self"
                 },
                 "period": {
-                    "start": "1970-01-01T01:00:00+01:00"
+                    "start": "2019-01-01",
+                    "end":"2024-12-31"
                 },
                 "payor": [
                     {
@@ -2158,7 +2159,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "2021289000832"
                     }
@@ -7766,7 +7767,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "2021214011810"
                     }
@@ -8541,7 +8542,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "7021312029739"
                     }
@@ -9002,7 +9003,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "2521310001166"
                     }
@@ -9378,7 +9379,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "7021312029701"
                     }
@@ -10283,7 +10284,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "2221314001047"
                     }
@@ -10607,7 +10608,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "88820210124"
                     }
@@ -10970,7 +10971,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "88820210218"
                     }
@@ -11488,7 +11489,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "88820210315"
                     }
@@ -11797,7 +11798,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "88820210226"
                     }
@@ -12271,7 +12272,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "99920210212"
                     }
@@ -12512,7 +12513,7 @@
                                     "display": "Unique Claim ID"
                                 }
                             ],
-                            "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"
+                            "text": "ICN"
                         },
                         "value": "99920210302"
                     }
