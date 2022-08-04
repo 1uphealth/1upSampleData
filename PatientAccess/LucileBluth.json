@@ -1452,7 +1452,6 @@
       "url": "Encounter"
     }
   }, {
-    "fullUrl": "ExplanationOfBenefit/26292811-7048-49a5-5812-bf8b3d78e777",
     "resource": {
       "resourceType": "ExplanationOfBenefit",
       "id": "26292811-7048-49a5-5812-bf8b3d78e777",
@@ -1474,13 +1473,22 @@
           "reference": "Practitioner/f8ad3d0d-0a9f-31d2-a435-5a379a22f018"
         } ]
       } ],
-      "identifier": [ {
-        "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
-        "value": "e999f276-86ea-f139-6edf-a137dff4b4c2"
-      }, {
-        "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
-        "value": "99999999999"
-      } ],
+      "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "code": "uc",
+                        "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+                        "display": "Unique Claim ID"
+                    }
+                ],
+                "text": "ICN"
+            },
+            "value": "e999f2767"
+        }
+    ],
       "status": "active",
       "type": {
         "coding": [ {
