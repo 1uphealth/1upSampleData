@@ -1,0 +1,79 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "resource": {
+                    "identifier": [
+                        {
+                            "system": "https://fhir.humana.com/documentation/glossary/userinfo_id",
+                            "value": "user00007"
+                        },
+                        {
+                            "system": "https://fhir.humana.com/sandbox/api",
+                            "use": "usual",
+                            "value": "74532b683658335246434e495a53425462476c5741673d3d"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "country": "US",
+                            "city": "Lake Gabriel",
+                            "line": [
+                                "747 Murphy Summit"
+                            ],
+                            "district": "Buckinghamshire",
+                            "postalCode": "05855",
+                            "state": "MO",
+                            "type": "physical"
+                        }
+                    ],
+                    "gender": "male",
+                    "birthDate": "2020-11-02",
+                    "meta": {
+                        "lastUpdated": "2022-07-18T12:51:16.602Z",
+                        "versionId": "9000000000018",
+                        "source": "https://fhir.humana.com/documentation/glossary/HumanaDataSource",
+                        "tag": [
+                            {
+                                "system": "https://www.hl7.org/fhir/patient.html",
+                                "code": "Patient/74532b683658335246434e495a53425462476c5741673d3d"
+                            },
+                            {
+                                "system": "https://fhir.humana.com/documentation/glossary/lastRefreshedOn",
+                                "code": "2022-07-17T07:34:18.961Z"
+                            },
+                            {
+                                "system": "https://fhir.humana.com/documentation/glossary/segmentID",
+                                "code": "02"
+                            }
+                        ]
+                    },
+                    "name": [
+                        {
+                            "given": [
+                                "Wellington"
+                            ],
+                            "use": "usual",
+                            "text": "Wellington O'Conner",
+                            "family": "O'Conner"
+                        }
+                    ],
+                    "telecom": [
+                        {
+                            "system": "phone",
+                            "value": "4032613602"
+                        },
+                        {
+                            "system": "email",
+                            "value": "Dale.Bins@hotmail.com"
+                        },
+                        {
+                            "system": "email",
+                            "value": "None"
+                        }
+                    ],
+                    "id": "testmemid16",
+                    "resourceType": "Patient"
+            }
+        }   ]
+}
