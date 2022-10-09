@@ -26,8 +26,8 @@
                     ]
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "doseQuantity": {
                     "value": 0.5,
@@ -54,7 +54,16 @@
                 "encounter": {
                     "display": "GP Visit"
                 },
-                "resourceType": "Immunization"
+                "resourceType": "Immunization",
+                "meta": {
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
+                    ]
+                }
             }
         },
         {
@@ -82,8 +91,8 @@
                     ]
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "doseQuantity": {
                     "value": 5,
@@ -106,7 +115,16 @@
                 "encounter": {
                     "display": "GP Visit"
                 },
-                "resourceType": "Immunization"
+                "resourceType": "Immunization",
+                "meta": {
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
+                    ]
+                }
             }
         },
         {
@@ -134,8 +152,8 @@
                     ]
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "doseQuantity": {
                     "value": 5,
@@ -173,14 +191,23 @@
                             }
                         ]
                     }
-                ]
+                ],
+                "meta": {
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
+                    ]
+                }
             }
         },
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -194,6 +221,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-01-07T17:19:15.000Z",
@@ -240,8 +274,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -255,6 +289,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-02-11T12:19:15.000Z",
@@ -301,8 +342,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -316,6 +357,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-03-17T19:19:15.000Z",
@@ -362,8 +410,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -377,6 +425,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-01-10T10:19:15.000Z",
@@ -422,8 +477,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -437,6 +492,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-02-03T10:19:15.000Z",
@@ -482,8 +544,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -497,6 +559,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-03-07T00:19:15.000Z",
@@ -543,8 +612,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -558,6 +627,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-01-28T07:19:15.000Z",
@@ -604,8 +680,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -619,6 +695,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-02-01T10:19:15.000Z",
@@ -664,8 +747,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -679,6 +762,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-03-18T10:19:15.000Z",
@@ -724,8 +814,8 @@
         {
             "resource": {
                 "subject": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -739,6 +829,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "onsetDateTime": "2021-01-31T21:19:15.000Z",
@@ -1011,7 +1108,16 @@
                     ],
                     "text": "M"
                 },
-                "resourceType": "Patient"
+                "resourceType": "Patient",
+                "meta": {
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
+                    ]
+                }
             }
         },
         {
@@ -1086,6 +1192,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "name": "ISD LAS VEGAS LLC",
@@ -1101,6 +1214,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "identifier": [
@@ -1146,11 +1266,11 @@
                 },
                 "period": {
                     "start": "2019-01-01",
-                    "end":"2024-12-31"
+                    "end": "2024-12-31"
                 },
                 "payor": [
                     {
-                                                "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                        "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
                         "display": "Demo Medicaid Plan Coverage"
                     }
                 ],
@@ -1226,6 +1346,13 @@
                             "code": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/",
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
+                        }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
                         }
                     ]
                 },
@@ -1305,6 +1432,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "name": "NORTH VISTA HOSPITAL",
@@ -1374,6 +1508,13 @@
                             "code": "http://build.fhir.org/ig/HL7/carin-bb/",
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
+                        }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
                         }
                     ]
                 },
@@ -1445,6 +1586,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "name": "SUNRISE HOSPITAL & MEDICAL CENTER",
@@ -1460,6 +1608,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "identifier": [
@@ -1544,6 +1699,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "name": "MARQUIS CENTENNIAL HILLS",
@@ -1598,6 +1760,13 @@
                             "code": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/",
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
+                        }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
                         }
                     ]
                 },
@@ -1659,6 +1828,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "name": [
@@ -1718,6 +1894,13 @@
                             "code": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/",
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
+                        }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
                         }
                     ]
                 },
@@ -1788,6 +1971,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "name": "WELL CARE DISCOUNT PHARMACY LLC",
@@ -1819,6 +2009,13 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "address": [
@@ -1914,6 +2111,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "name": [
@@ -1935,7 +2139,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -2128,12 +2332,12 @@
                     "display": "ISD LAS VEGAS LLC"
                 },
                 "insurer": {
-                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-                        "display": "Demo Medicaid Plan Coverage"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "payment": {
                     "type": {
@@ -7429,6 +7633,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-record-number",
                             "version": "taf"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "billablePeriod": {
@@ -7445,7 +7656,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -7714,15 +7925,15 @@
                 ],
                 "provider": {
                     "reference": "Organization/1861439952",
-                    "display":"SUNRISE HOSPITAL & MEDICAL CENTER"
+                    "display": "SUNRISE HOSPITAL & MEDICAL CENTER"
                 },
                 "insurer": {
-                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-                        "display": "Demo Medicaid Plan Coverage"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "payment": {
                     "type": {
@@ -7750,7 +7961,7 @@
                         },
                         "provider": {
                             "reference": "Practitioner/1922056589",
-                            "display":"ELLIS LAMONT"
+                            "display": "ELLIS LAMONT"
                         }
                     }
                 ],
@@ -8243,6 +8454,11 @@
                         {
                             "code": "R",
                             "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
                         }
                     ],
                     "profile": [
@@ -8275,7 +8491,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -8484,15 +8700,15 @@
                 ],
                 "provider": {
                     "reference": "Organization/1104870187",
-                    "display":"MOUNTAINVIEW HOSPITAL AND MEDICAL CENTER"
+                    "display": "MOUNTAINVIEW HOSPITAL AND MEDICAL CENTER"
                 },
                 "insurer": {
-                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-                        "display": "Demo Medicaid Plan Coverage"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "id": "7021312029739",
                 "careTeam": [
@@ -8509,7 +8725,7 @@
                         },
                         "provider": {
                             "reference": "Practitioner/1922056589",
-                            "display":"ELLIS LAMONT"
+                            "display": "ELLIS LAMONT"
                         }
                     },
                     {
@@ -8525,7 +8741,7 @@
                         },
                         "provider": {
                             "reference": "Practitioner/1164746772",
-                            "display":"ALEMI GOLNAZ"
+                            "display": "ALEMI GOLNAZ"
                         }
                     }
                 ],
@@ -8759,6 +8975,11 @@
                         {
                             "code": "R",
                             "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
                         }
                     ],
                     "profile": [
@@ -8791,7 +9012,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -8970,15 +9191,15 @@
                 ],
                 "provider": {
                     "reference": "Organization/1003166505",
-                    "display":"WELL CARE DISCOUNT PHARMACY LLC"
+                    "display": "WELL CARE DISCOUNT PHARMACY LLC"
                 },
                 "insurer": {
-                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-                        "display": "Demo Medicaid Plan Coverage"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "payment": {
                     "type": {
@@ -9085,6 +9306,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-record-number",
                             "version": "taf"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "billablePeriod": {
@@ -9101,7 +9329,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -9310,15 +9538,15 @@
                 ],
                 "provider": {
                     "reference": "Organization/1104870187",
-                    "display":"MOUNTAINVIEW HOSPITAL AND MEDICAL CENTER"
+                    "display": "MOUNTAINVIEW HOSPITAL AND MEDICAL CENTER"
                 },
                 "insurer": {
-                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-                        "display": "Demo Medicaid Plan Coverage"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "payment": {
                     "type": {
@@ -9346,7 +9574,7 @@
                         },
                         "provider": {
                             "reference": "Practitioner/1093904633",
-                            "display":"RAZA KASHIF"
+                            "display": "RAZA KASHIF"
                         }
                     },
                     {
@@ -9362,7 +9590,7 @@
                         },
                         "provider": {
                             "reference": "Practitioner/1093904633",
-                            "display":"RAZA KASHIF"
+                            "display": "RAZA KASHIF"
                         }
                     }
                 ],
@@ -9951,6 +10179,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-record-number",
                             "version": "taf"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "billablePeriod": {
@@ -9967,7 +10202,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -10232,15 +10467,15 @@
                 ],
                 "provider": {
                     "reference": "Organization/1194045336",
-                    "display":"MARQUIS CENTENNIAL HILLS"
+                    "display": "MARQUIS CENTENNIAL HILLS"
                 },
                 "insurer": {
-                                            "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
-                        "display": "Demo Medicaid Plan Coverage"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "payment": {
                     "type": {
@@ -10268,7 +10503,7 @@
                         },
                         "provider": {
                             "reference": "Practitioner/1134243454",
-                            "display":"PATEL SUJAY"
+                            "display": "PATEL SUJAY"
                         }
                     }
                 ],
@@ -10369,6 +10604,11 @@
                         {
                             "code": "R",
                             "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
                         }
                     ],
                     "profile": [
@@ -10401,7 +10641,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -10549,7 +10789,7 @@
                 ],
                 "provider": {
                     "reference": "Organization/1720037799",
-                    "display":"NORTH VISTA HOSPITAL"
+                    "display": "NORTH VISTA HOSPITAL"
                 },
                 "payment": {
                     "type": {
@@ -10576,7 +10816,7 @@
                         },
                         "provider": {
                             "reference": "Practitioner/1609823533",
-                            "display":"BERNSTEIN KEVIN"
+                            "display": "BERNSTEIN KEVIN"
                         }
                     },
                     {
@@ -10591,8 +10831,8 @@
                             ]
                         },
                         "provider": {
-                                                        "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                            "reference": "Practitioner/456342468",
+                            "display": "Caitlyn Medhurst"
                         }
                     }
                 ],
@@ -10744,11 +10984,18 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "billablePeriod": {
                     "start": "2021-01-05",
@@ -10764,7 +11011,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -10908,8 +11155,8 @@
                     }
                 ],
                 "provider": {
-                                                "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                    "reference": "Practitioner/456342468",
+                    "display": "Caitlyn Medhurst"
                 },
                 "payment": {
                     "type": {
@@ -10938,8 +11185,8 @@
                             ]
                         },
                         "provider": {
-                                                        "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                            "reference": "Practitioner/456342468",
+                            "display": "Caitlyn Medhurst"
                         }
                     },
                     {
@@ -10954,8 +11201,8 @@
                             ]
                         },
                         "provider": {
-                                                        "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                            "reference": "Practitioner/456342468",
+                            "display": "Caitlyn Medhurst"
                         }
                     }
                 ],
@@ -11139,11 +11386,18 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "billablePeriod": {
                     "start": "2021-02-02",
@@ -11159,7 +11413,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -11443,11 +11697,11 @@
                 ],
                 "provider": {
                     "reference": "Practitioner/1922056589",
-                            "display":"ELLIS LAMONT"
+                    "display": "ELLIS LAMONT"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "payment": {
                     "type": {
@@ -11472,8 +11726,8 @@
                             ]
                         },
                         "provider": {
-                                                        "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                            "reference": "Practitioner/456342468",
+                            "display": "Caitlyn Medhurst"
                         }
                     }
                 ],
@@ -11575,6 +11829,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "billablePeriod": {
@@ -11591,7 +11852,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -11644,7 +11905,7 @@
                     {
                         "amount": {
                             "currency": "USD",
-                            "value": 26.50
+                            "value": 26.5
                         },
                         "category": {
                             "coding": [
@@ -11675,7 +11936,7 @@
                     {
                         "amount": {
                             "currency": "USD",
-                            "value": 26.50
+                            "value": 26.5
                         },
                         "category": {
                             "coding": [
@@ -11690,7 +11951,7 @@
                     {
                         "amount": {
                             "currency": "USD",
-                            "value": 26.50
+                            "value": 26.5
                         },
                         "category": {
                             "coding": [
@@ -11738,8 +11999,8 @@
                     }
                 ],
                 "provider": {
-                                                "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                    "reference": "Practitioner/456342468",
+                    "display": "Caitlyn Medhurst"
                 },
                 "payment": {
                     "type": {
@@ -11765,8 +12026,8 @@
                             ]
                         },
                         "provider": {
-                                                        "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                            "reference": "Practitioner/456342468",
+                            "display": "Caitlyn Medhurst"
                         }
                     },
                     {
@@ -11781,8 +12042,8 @@
                             ]
                         },
                         "provider": {
-                                                        "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                            "reference": "Practitioner/456342468",
+                            "display": "Caitlyn Medhurst"
                         }
                     }
                 ],
@@ -11809,7 +12070,7 @@
                             {
                                 "amount": {
                                     "currency": "USD",
-                                    "value": 26.50
+                                    "value": 26.5
                                 },
                                 "category": {
                                     "coding": [
@@ -11854,7 +12115,7 @@
                             {
                                 "amount": {
                                     "currency": "USD",
-                                    "value": 26.50
+                                    "value": 26.5
                                 },
                                 "category": {
                                     "coding": [
@@ -12057,11 +12318,18 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "billablePeriod": {
                     "start": "2021-02-05",
@@ -12077,7 +12345,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -12240,15 +12508,15 @@
                     }
                 ],
                 "provider": {
-                                                "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                    "reference": "Practitioner/456342468",
+                    "display": "Caitlyn Medhurst"
                 },
                 "insurer": {
                     "display": "Medicare"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "payment": {
                     "type": {
@@ -12302,6 +12570,13 @@
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
                         }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
+                        }
                     ]
                 },
                 "billablePeriod": {
@@ -12318,7 +12593,7 @@
                     {
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-"display": "Demo Medicaid Plan Coverage"
+                            "display": "Demo Medicaid Plan Coverage"
                         },
                         "focal": true
                     }
@@ -12481,15 +12756,15 @@
                     }
                 ],
                 "provider": {
-                                                "reference": "Practitioner/456342468",
-                            "display":"Caitlyn Medhurst"
+                    "reference": "Practitioner/456342468",
+                    "display": "Caitlyn Medhurst"
                 },
                 "insurer": {
                     "display": "Medicare"
                 },
                 "patient": {
-                                        "reference": "Patient/12356789124",
-                    "display":"Tim Brown"
+                    "reference": "Patient/12356789124",
+                    "display": "Tim Brown"
                 },
                 "payment": {
                     "type": {
@@ -12542,6 +12817,13 @@
                             "code": "http://build.fhir.org/ig/HL7/carin-bb/",
                             "system": "urn:uuid:internal-1up-health-coding-systems-ig",
                             "version": "0.0.1"
+                        }
+                    ],
+                    "security": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActReason",
+                            "code": "HTEST",
+                            "display": "test health data"
                         }
                     ]
                 },
