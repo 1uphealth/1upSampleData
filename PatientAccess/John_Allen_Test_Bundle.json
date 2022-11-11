@@ -840,9 +840,6 @@
                     ],
                     "text": "Glucose [Moles/volume] in Blood"
                 },
-                "effectivePeriod": {
-                    "start": "2021-03-16T21:12:29.000Z"
-                },
                 "valueQuantity": {
                     "unit": "mmol/l",
                     "system": "http://unitsofmeasure.org",
