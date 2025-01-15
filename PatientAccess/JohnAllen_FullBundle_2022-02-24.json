@@ -11284,7 +11284,7 @@
                     "text": "Claim Type Codes"
                 },
                 "insurer": {
-                    "display": "Medicare"
+                    "reference": "Organization/medicare-org-001"
                 },
                 "total": [
                     {
@@ -11796,7 +11796,7 @@
                 },
                 "id": "88820210218",
                 "insurer": {
-                    "display": "Medicare"
+                    "reference": "Organization/medicare-org-001"
                 },
                 "careTeam": [
                     {
@@ -12056,7 +12056,7 @@
                     "text": "Claim Type Codes"
                 },
                 "insurer": {
-                    "display": "Medicare"
+                    "reference": "Organization/medicare-org-001"
                 },
                 "adjudication": [
                     {
@@ -12495,7 +12495,7 @@
                     "text": "Claim Type Codes"
                 },
                 "insurer": {
-                    "display": "Medicare"
+                    "reference": "Organization/medicare-org-001"
                 },
                 "total": [
                     {
@@ -13138,7 +13138,7 @@
                     "display": "Caitlyn Medhurst"
                 },
                 "insurer": {
-                    "display": "Medicare"
+                    "reference": "Organization/medicare-org-001"
                 },
                 "patient": {
                     "reference": "Patient/12356789123555",
@@ -13155,6 +13155,24 @@
                 },
                 "id": "99920210212",
                 "outcome": "complete",
+                "careTeam": [
+                    {
+                        "sequence": 1,
+                        "provider": {
+                            "reference": "Practitioner/1922056589",
+                            "display": "ELLIS LAMONT"
+                        },
+                        "role": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+                                    "code": "primary",
+                                    "display": "Primary Care Practitioner"
+                                }
+                            ]
+                        }
+                    }
+                ],                
                 "identifier": [
                     {
                         "use": "official",
@@ -13386,7 +13404,7 @@
                     "display": "Caitlyn Medhurst"
                 },
                 "insurer": {
-                    "display": "Medicare"
+                    "reference": "Organization/medicare-org-001"
                 },
                 "patient": {
                     "reference": "Patient/12356789123555",
@@ -13515,7 +13533,8 @@
                 },
                 "created": "2013-06-12T00:41:04+02:00",
                 "insurer": {
-                    "display": "Medicaid"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "provider": {
                     "reference": "Practitioner/1922056589",
@@ -14016,7 +14035,8 @@
                 },
                 "created": "2017-01-10T23:41:04+01:00",
                 "insurer": {
-                    "display": "Medicaid"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "provider": {
                     "reference": "Practitioner/1093904633",
@@ -14260,7 +14280,8 @@
                 },
                 "created": "2020-01-07T23:41:04+01:00",
                 "insurer": {
-                    "display": "Medicaid"
+                    "reference": "Organization/7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a",
+                    "display": "Demo Medicaid Plan Coverage"
                 },
                 "provider": {
                     "reference": "Practitioner/1134243454",
@@ -14319,7 +14340,7 @@
                         "focal": true,
                         "coverage": {
                             "reference": "Coverage/5e42f562-5533-8ec7-ea02-18cfed1c6244",
-                            "display": "NO_INSURANCE"
+                            "display": "Demo Medicaid Plan Coverage"
                         }
                     }
                 ],
@@ -14579,6 +14600,94 @@
                     }
                 }
             }
+        },
+        {
+        "resource": {   
+            "resourceType": "Organization",
+            "id": "medicare-org-001",
+            "meta": {
+              "profile": [
+                "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medicare Organization Example</div>"
+            },
+            "identifier": [
+              {
+                "system": "http://hl7.org/fhir/sid/us-npi",
+                "value": "1234567890"
+              },
+              {
+                "system": "http://example.org/medicare-organization-id",
+                "value": "MEDICARE-001"
+              }
+            ],
+            "active": true,
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                    "code": "pay",
+                    "display": "Payer"
+                  }
+                ]
+              }
+            ],
+            "name": "Medicare National Payer",
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "+1-800-MEDICARE",
+                "use": "work"
+              },
+              {
+                "system": "email",
+                "value": "info@medicare.gov",
+                "use": "work"
+              }
+            ],
+            "address": [
+              {
+                "use": "work",
+                "line": ["7500 Security Boulevard"],
+                "city": "Baltimore",
+                "state": "MD",
+                "postalCode": "21244",
+                "country": "US"
+              }
+            ],
+            "contact": [
+              {
+                "purpose": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/contactentity-type",
+                      "code": "ADMIN",
+                      "display": "Administrative"
+                    }
+                  ]
+                },
+                "name": {
+                  "text": "Medicare Support Team"
+                },
+                "telecom": [
+                  {
+                    "system": "phone",
+                    "value": "+1-800-MEDICARE",
+                    "use": "work"
+                  },
+                  {
+                    "system": "email",
+                    "value": "support@medicare.gov",
+                    "use": "work"
+                  }
+                ]
+              }
+            ]
+            }           
         }
     ]
 }
